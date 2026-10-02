@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Saku Apps',
-  description: 'Master Management',
+  title: 'Invoice Studio',
+  description: 'Create, manage, and export invoices.',
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
       <body className={cn('min-h-screen antialiased', inter.className)}>
         <ThemeProvider
           attribute="class"

@@ -75,6 +75,43 @@
   }
 }
 
+.invoice-shell {
+  background-color: hsl(35 24% 97%);
+  background-image: radial-gradient(hsl(25 12% 80% / 0.28) 0.65px, transparent 0.65px);
+  background-size: 14px 14px;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm;
+  }
+
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .invoice-shell {
+    min-height: 0 !important;
+    background: #fff !important;
+  }
+
+  .invoice-items-table {
+    overflow: visible !important;
+  }
+
+  .invoice-items-table table {
+    width: 100%;
+  }
+
+  .invoice-items-table tr {
+    break-inside: avoid;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

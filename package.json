@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "db:setup": "node scripts/migrate-invoices.mjs",
     "prettier": "prettier --write .",
     "prepare": "husky"
   },
